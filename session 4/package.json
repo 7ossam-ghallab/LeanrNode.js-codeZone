@@ -1,0 +1,17 @@
+{
+  "name": "session-4",
+  "version": "1.0.0",
+  "main": "idnex.js",
+  "scripts": {
+    "mainFile": "nodemon idnex.js",
+    "app_express": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
