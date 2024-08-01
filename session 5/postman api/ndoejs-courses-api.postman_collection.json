@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "2b4a7f5e-d62e-4f5e-a25d-d7d8c0f77c33",
+		"name": "ndoejs-courses-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37376083"
+	},
+	"item": [
+		{
+			"name": "get-courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "get-single-course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/courses/1"
+			},
+			"response": []
+		},
+		{
+			"name": "add-course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "update-course",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/courses/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/api/courses/1"
+			},
+			"response": []
+		}
+	]
+}
