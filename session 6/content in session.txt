@@ -1,0 +1,18 @@
+1- what is database (wikipedia)
+2- relational DB(SQL) & non-relational DB(NoSQl)
+3- document oriented DB
+4- what is mongoDB
+5- mongo atlas
+6- create project and database
+7- download compass and install it
+8- connect mongo atlas with compass
+9- connect db with node
+  -> npm init -y
+  -> npm install mongodb (Install your driver)
+  -> add your connection string into your application code
+10- insert data from node.js and show all data in db in console
+** mongoDB is schemaless
+11- what is mongoose and what is it use	for? and install it
+12- connect mongoose with old app(session 5) and create model
+13- use model in CURD functions
+
