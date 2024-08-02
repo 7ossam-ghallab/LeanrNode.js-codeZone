@@ -15,4 +15,10 @@
 11- what is mongoose and what is it use	for? and install it
 12- connect mongoose with old app(session 5) and create model
 13- use model in CURD functions
-
+{
+  getAllCourses,
+  getSingleCourse,
+  addNewCourse,
+  updateCourse,
+  deleteCourse
+}
