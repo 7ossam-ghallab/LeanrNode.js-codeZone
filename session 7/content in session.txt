@@ -1,0 +1,11 @@
+1- how to use any db (sequelize)
+2- standard pattern (jsend) and apply it in the project
+3- what is pagination and how do you do it
+4- query parameters => ex.  http://localhost:5000/api/courses?limit=2&page=1
+5- how to make our url secure
+  -> install package (dotenv)
+6- handling the default error
+7- connect api to client
+8- solve problem CORS(croos origin resource sharing) via install cors package
+9- create middleware to handle catch errors in controllers
+10- express-async-handler(package)
