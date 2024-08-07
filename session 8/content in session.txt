@@ -1,0 +1,12 @@
+1- Add user feature(login and registration)
+2- create user model
+    -> validator in mongoose
+    -> validator(npm)
+3- create users-controllers and users-route
+    -> get-all-users
+    -> delete-all-users
+    -> register
+    -> login
+4- password hashing => npm (bcryptjs)
+5- what is JWT(JSON Web Token) [https://jwt.io/libraries] and install jsonwebtoken
+6- authorization for show all users and create middleware to verify token
