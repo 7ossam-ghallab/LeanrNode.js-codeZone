@@ -1,0 +1,4 @@
+1- Setup environment in postman and create variable (Base_url, token{in test tab})
+2- Add a user role (USER, ADMIN, MANAGER)
+3- Create middleware allowed to admin and manager to delete and add courses
+4- file upload and create route to preview imges profile => package(multer)

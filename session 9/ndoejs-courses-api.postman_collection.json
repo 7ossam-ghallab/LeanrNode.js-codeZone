@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "2b4a7f5e-d62e-4f5e-a25d-d7d8c0f77c33",
+		"name": "ndoejs-courses-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37376083"
+	},
+	"item": [
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "get-courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_url}}/api/courses"
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Base_url}}/api/courses/66af4e4c2e53a51f766e6dbc"
+					},
+					"response": []
+				},
+				{
+					"name": "add-course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"test\",\r\n    \"price\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_url}}/api/courses"
+					},
+					"response": []
+				},
+				{
+					"name": "update-course",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_url}}/api/courses/66af4ece288efa5874961a78"
+					},
+					"response": []
+				},
+				{
+					"name": "delete-course",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{Base_url}}/api/courses/66b4c8ee80bb95f2b3aefd05"
+					},
+					"response": []
+				},
+				{
+					"name": "delete-all-courses",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{Base_url}}/api/courses"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "get-all-users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{Base_url}}/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "hossam",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "ghallab",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hossam11@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/E:/Download/images_and_icons/_.jpeg"
+								}
+							]
+						},
+						"url": "{{Base_url}}/api/users/register"
+					},
+					"response": []
+				},
+				{
+					"name": "delete-all-users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{Base_url}}/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"token\", pm.response.json().data.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"hossam@gmail.com\",\r\n    \"password\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Base_url}}/api/users/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "preview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Base_url}}/uploads/user-1723133101636.jpeg"
+			},
+			"response": []
+		}
+	]
+}
