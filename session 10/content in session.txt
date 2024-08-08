@@ -1,0 +1,10 @@
+Session [10] - project deployment 
+
+1- go to render website [https://render.com/]
+2- create an account and log in
+3- after login go to new web service
+4- Connect with GitHub
+5- fill in the data as shown in the ((render.png)) file after that click on Deploy web service
+6- if the mongo server is not connected click connect and copy all the addresses and add them all to the server in network access
+
+** some sites deploy projects -> {render, vercle, heroku, glitch, railway}

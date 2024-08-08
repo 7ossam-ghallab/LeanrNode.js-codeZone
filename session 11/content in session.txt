@@ -1,0 +1,6 @@
+Session [11] - Web Sockets & realtime application
+
+1- How the socket is built and how it works & what is HTTP polling (socket.io)
+2- create folder for chatting application and install some packages => {express, socket.io, nodemon}
+3- create server from socket.io
+4- complete the project tutorial on socket.io website => [https://socket.io/docs/v4/tutorial/introduction]
